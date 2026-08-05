@@ -105,5 +105,6 @@
     };
   }
 
-  window.addEventListener('DOMContentLoaded',()=>{addStyles();initAssistedSearch();initRecommendations();setTimeout(initAdminAssistance,700)});
+  const start=()=>{addStyles();initAssistedSearch();initRecommendations();setTimeout(initAdminAssistance,700)};
+  if(document.readyState==='loading')window.addEventListener('DOMContentLoaded',start,{once:true});else start();
 })();
