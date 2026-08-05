@@ -1,1 +1,1 @@
-{"cleanUrls":true,"trailingSlash":false,"rewrites":[{"source":"/polls/:slug","destination":"/polls/generic"}]}
+{"cleanUrls":true,"trailingSlash":false,"rewrites":[{"source":"/polls/:slug","destination":"/polls/generic"},{"source":"/surveys/:slug","destination":"/surveys/generic"}]}
