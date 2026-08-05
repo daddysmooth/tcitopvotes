@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">TCI Top 10 social sharing card</title>
+  <desc id="desc">Branded Turks and Caicos community voting and rankings graphic.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071b34"/>
+      <stop offset="0.55" stop-color="#0b4f7f"/>
+      <stop offset="1" stop-color="#12a6a0"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd36a"/>
+      <stop offset="1" stop-color="#ff9f43"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#00152a" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1020" cy="125" r="92" fill="url(#sun)" opacity="0.95"/>
+  <path d="M0 455 C190 390 350 500 560 445 C760 392 930 460 1200 390 L1200 630 L0 630 Z" fill="#1dc7c0" opacity="0.45"/>
+  <path d="M0 505 C210 455 390 545 610 500 C820 458 1010 525 1200 470 L1200 630 L0 630 Z" fill="#eafcff" opacity="0.92"/>
+  <g transform="translate(84 88)" filter="url(#shadow)">
+    <rect width="730" height="420" rx="34" fill="#ffffff" opacity="0.97"/>
+    <text x="54" y="102" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#0a315c">TCI TOP 10</text>
+    <text x="54" y="156" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#13a7a1">TURKS &amp; CAICOS</text>
+    <text x="54" y="245" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" fill="#071b34">Vote. Review.</text>
+    <text x="54" y="310" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" fill="#071b34">Discover the Best.</text>
+    <text x="54" y="366" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#47627d">Community-powered polls, rankings and surveys</text>
+    <text x="54" y="400" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#47627d">for the Turks and Caicos Islands.</text>
+  </g>
+  <g transform="translate(910 245)">
+    <path d="M60 190 C18 135 24 77 74 34 C108 5 155 6 187 35 C146 29 115 46 96 78 C77 110 78 150 98 185 C84 184 72 186 60 190 Z" fill="#063b60" opacity="0.95"/>
+    <path d="M98 184 C127 120 126 70 105 25 C152 39 185 73 193 117 C201 159 184 198 148 226 C136 204 119 190 98 184 Z" fill="#0b6e8f"/>
+    <path d="M70 231 C121 211 171 211 221 231" fill="none" stroke="#0a315c" stroke-width="12" stroke-linecap="round"/>
+    <path d="M82 260 C132 241 181 241 230 260" fill="none" stroke="#13a7a1" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <text x="860" y="570" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#08345b">tcitopvotes.vercel.app</text>
+</svg>
