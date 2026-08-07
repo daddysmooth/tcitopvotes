@@ -8,6 +8,27 @@
     ['Rankings and Survey Operations','Open rankings, surveys and reports']
   ]);
 
+  function ensureBusinessTools(){
+    if(!isAdminHome())return;
+    const hero=document.querySelector('.adminHero');
+    const tools=hero?.querySelector('[data-admin-modules]');
+    if(!tools)return;
+    if(!tools.querySelector('a[href="/admin/businesses"]')){
+      const manage=document.createElement('a');
+      manage.className='btn light';
+      manage.href='/admin/businesses';
+      manage.textContent='Manage Businesses';
+      tools.append(manage);
+    }
+    if(!tools.querySelector('a[href="/admin/businesses/new"]')){
+      const add=document.createElement('a');
+      add.className='btn primary';
+      add.href='/admin/businesses/new';
+      add.textContent='+ Add Business';
+      tools.append(add);
+    }
+  }
+
   function compactHeroTools(){
     const hero=document.querySelector('.adminHero');
     const tools=hero?.querySelector('[data-admin-modules]');
@@ -112,7 +133,9 @@
   }
 
   function apply(){
-    if(!isAdminHome()||!isMobile())return;
+    if(!isAdminHome())return;
+    ensureBusinessTools();
+    if(!isMobile())return;
     document.body.classList.add('mobileAdmin');
     compactHeroTools();
     compactStats();
